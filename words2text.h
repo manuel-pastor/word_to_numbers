@@ -10,6 +10,7 @@
 #include <tuple>
 #include <cstdint>
 #include <algorithm>
+#include <string>
 
 // The main class where the stuff is done
 

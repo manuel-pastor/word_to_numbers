@@ -264,7 +264,13 @@ std::string Words2Text::replace(std::string candidate) {
         // Accumulates numbers in substring, and converts it, replacing its text by the decimal representation
         while (is_number_word(word)) {
             number += word + " ";
-            word = words[++n];
+            if (n < words.size()-1)
+                word = words[++n];
+            else
+            {
+                word = "";
+                n++;
+            }
         }
 
         if (number != "") {
